@@ -1,0 +1,32 @@
+{
+  "name": "user-mfe-angular",
+  "version": "1.0.0",
+  "description": "User profile micro-frontend built with Angular",
+  "scripts": {
+    "start": "ng serve --port 3003",
+    "build": "ng build"
+  },
+  "keywords": ["micro-frontend", "angular", "user-profile"],
+  "author": "Identity Team",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/animations": "^17.3.0",
+    "@angular/common": "^17.3.0",
+    "@angular/compiler": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "@angular/forms": "^17.3.0",
+    "@angular/platform-browser": "^17.3.0",
+    "@angular/platform-browser-dynamic": "^17.3.0",
+    "@angular/router": "^17.3.0",
+    "rxjs": "^7.8.1",
+    "tslib": "^2.6.2",
+    "zone.js": "^0.14.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.3.0",
+    "@angular/cli": "^17.3.0",
+    "@angular/compiler-cli": "^17.3.0",
+    "@ngx-env/builder": "^17.0.0",
+    "typescript": "~5.4.0"
+  }
+}

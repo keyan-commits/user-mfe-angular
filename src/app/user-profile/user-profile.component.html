@@ -1,0 +1,33 @@
+<div style="padding: 20px;">
+  <h3>Angular User Profile Component</h3>
+  
+  <div class="user-profile" *ngIf="user">
+    <div class="profile-card">
+      <img [src]="user.picture" [alt]="user.name" class="user-avatar">
+      <div class="user-info">
+        <h3 class="user-name">{{ user.name }}</h3>
+        <p class="user-email">{{ user.email }}</p>
+        <div class="user-stats">
+          <div class="stat-item cart-stat">
+            <span class="stat-icon">🛒</span>
+            <span class="stat-value">{{ cartItemCount }}</span>
+            <span class="stat-label">items</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item provider-stat">
+            <span class="provider-badge">{{ getProviderDisplay() }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!user" style="padding: 40px; text-align: center; background: #f0f0f0; border-radius: 8px; margin-top: 20px;">
+    <div style="font-size: 48px; margin-bottom: 15px;">👤</div>
+    <h4 style="color: #333; margin-bottom: 10px;">No User Logged In</h4>
+    <p style="color: #666; font-size: 14px;">
+      This component displays user information when accessed through the shell app.<br>
+      Login via the main app at <strong>localhost:3000</strong> to see the profile.
+    </p>
+  </div>
+</div>
